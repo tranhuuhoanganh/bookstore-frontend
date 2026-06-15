@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./layouts/Navbar";
+import Footer from './layouts/Footer';
+import HomePage from './layouts/HomePage/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <div className='bg-primary'>sssss</div>
-      
+      <Navbar/>
+      <HomePage/>
+      <Footer/>
     </div>
   );
 }
