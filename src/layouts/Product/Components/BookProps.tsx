@@ -10,7 +10,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => (
         <div className="card h-100 shadow-sm border-0">
             {/* Ảnh sách */}
             <img
-                
+
                 className="card-img-top"
                 style={{
                     height: "280px",
