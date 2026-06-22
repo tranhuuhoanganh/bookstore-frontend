@@ -7,6 +7,5 @@ export async function getUser():Promise<UserModel[]> {
         throw new Error("Không có dữ liệu");
     }
     const result = await respon.json();
-      console.log(result);
     return result._embedded.nguoiDungs;
 }
