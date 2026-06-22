@@ -1,6 +1,6 @@
 class SachModel {
     maSach: number
-    tenSachh?: String // có thể bị null
+    tenSach?: String // có thể bị null
     giaBan?: number
     giaNiemYet?: number
     moTa?: String
@@ -10,7 +10,7 @@ class SachModel {
 
     constructor(
         maSach: number,
-        tenSachh: String, // có thể bị null
+        tenSach: String, // có thể bị null
         giaBan: number,
         giaNiemYet: number,
         moTa: String,
@@ -18,7 +18,7 @@ class SachModel {
         tenTacGia: String,
         trungBinhXepHang: number,) {
         this.maSach = maSach
-        this.tenSachh = tenSachh
+        this.tenSach = tenSach
         this.giaNiemYet = giaNiemYet
         this.moTa = moTa
         this.giaBan = giaBan

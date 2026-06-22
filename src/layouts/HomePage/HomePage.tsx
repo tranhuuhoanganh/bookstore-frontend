@@ -1,10 +1,14 @@
 import React from "react";
 import Banner from "./Components/Banner";
-import List from "../Product/ListBook";
+import DanhSachSanPham from "../Product/DanhSachSanPham";
+import DanhSachNguoiDung from "../Product/DanhSachNguoiDung";
 function HomePage(){
     return(
         <div><Banner/>
-        <List/></div>
+        <DanhSachSanPham/>
+        <DanhSachNguoiDung/>
+        </div>
+
         
     );
 }

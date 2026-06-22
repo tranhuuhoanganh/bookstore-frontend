@@ -1,11 +1,9 @@
 import React from "react";
-import Book from "../../../Models/Book";
-
-interface BookCardProps {
-    book: Book;
+import SachModel from "../../../Models/SachModel";
+interface sachPropsInterface{
+    sach: SachModel
 }
-
-const BookCard: React.FC<BookCardProps> = ({ book }) => (
+const SachProps: React.FC<sachPropsInterface> = ( props ) => (
     <div className="col-md-3 mb-4">
         <div className="card h-100 shadow-sm border-0">
             {/* Ảnh sách */}
@@ -26,7 +24,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => (
                         minHeight: "48px",
                     }}
                 >
-                    {book.title}
+                    {props.sach.tenSach}
                 </h6>
 
                 {/* Giá */}
@@ -38,14 +36,14 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => (
                             fontSize: "14px",
                         }}
                     >
-                        {book.orginalPrice.toLocaleString()}đ
+                        {props.sach.giaNiemYet}đ
                     </span>
 
                     <span
                         className="fw-bold text-danger"
                         style={{ fontSize: "18px" }}
                     >
-                        {book.price.toLocaleString()}đ
+                        {props.sach.giaBan}đ
                     </span>
                 </div>
 
@@ -70,4 +68,4 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => (
     </div>
 );
 
-export default BookCard;
+export default SachProps;
