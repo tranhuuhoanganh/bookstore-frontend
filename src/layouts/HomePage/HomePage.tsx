@@ -2,13 +2,13 @@ import React from "react";
 import Banner from "./Components/Banner";
 import DanhSachSanPham from "../Product/DanhSachSanPham";
 import DanhSachNguoiDung from "../Product/DanhSachNguoiDung";
-import DanhSachDonHang from "../Product/DanhSachDonHang";
+import SachMoi from "./Components/Carousel";
 function HomePage(){
     return(
         <div><Banner/>
-        {/* <DanhSachSanPham/>
-        <DanhSachNguoiDung/> */}
-        <DanhSachDonHang/>
+        <SachMoi/>
+        <DanhSachSanPham/>
+        <DanhSachNguoiDung/>
         </div>
 
         
